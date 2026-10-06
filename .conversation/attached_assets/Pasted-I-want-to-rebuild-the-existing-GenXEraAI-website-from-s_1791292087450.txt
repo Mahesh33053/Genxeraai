@@ -1,0 +1,398 @@
+I want to rebuild the existing GenXEraAI website from scratch.
+
+REFERENCE WEBSITE:
+https://www.genxeraai.com/
+
+IMPORTANT:
+This is a reconstruction project. I want the new website to closely reproduce the existing website's visual structure, layout, navigation, section hierarchy, responsiveness, interactions, typography style, spacing, cards, buttons, animations and overall user experience.
+
+Do NOT create a generic educational website.
+
+Do NOT redesign the website into a different style.
+
+The reference website is the visual and structural source of truth.
+
+TECHNOLOGY REQUIREMENTS:
+
+Frontend:
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- No React
+- No Vue
+- No Angular
+- No Bootstrap unless absolutely necessary
+- Prefer custom CSS
+- Use semantic HTML
+- Fully responsive
+
+PROJECT STRUCTURE:
+
+/
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── logos/
+├── pages/
+│   ├── internships.html
+│   ├── platform.html
+│   ├── collaboration.html
+│   └── contact.html
+└── course/
+    └── course pages will be added later
+
+FIRST TASK:
+
+Build ONLY the homepage.
+
+Do not build the backend yet.
+
+Do not create fake API calls.
+
+Do not create authentication yet.
+
+Do not implement payment yet.
+
+Do not modify the reference website's content unnecessarily.
+
+HOMEPAGE STRUCTURE:
+
+1. NAVIGATION BAR
+
+Reproduce the reference site's navigation structure:
+
+- GenXEraAI logo/brand
+- Home
+- Internships
+- Platform
+- Collaboration
+- Contact Us
+
+Requirements:
+- Desktop navigation
+- Mobile responsive navigation
+- Hamburger menu on mobile
+- Smooth hover states
+- Sticky/fixed behavior matching the reference
+- Correct spacing and typography
+- Navigation must actually work
+
+2. HERO SECTION
+
+Reproduce the reference hero section.
+
+Main brand:
+GenXEraAI
+
+Headline:
+Where Curiosity Meets Clarity.
+
+Supporting content should communicate:
+
+GenXEraAI accelerates careers through immersive, hands-on internships in AI, Cloud Computing, Full-Stack Development, VLSI and other technology domains.
+
+Primary CTA:
+Explore Programs
+
+Secondary CTA:
+Start Internship - ₹1499
+
+Reproduce the visual hierarchy and futuristic technology-oriented aesthetic.
+
+3. TRUST / VALUE STRIP
+
+Include:
+
+Trusted by 1,000+ Students
+Colleges
+Training Partners
+
+Then reproduce the four value propositions:
+
+Industry-Grade Curriculum
+Engineered around enterprise use cases
+
+Real-World Development
+Build scalable apps & AI models
+
+Verifiable Certification
+Industry-recognized credentials generated
+
+Accessible Excellence
+Premium paths starting at ₹1499
+
+Also include:
+
+Perfect for Students
+Freshers
+Career Switchers
+Beginners
+
+4. PLATFORM CAPABILITIES
+
+Create the section:
+
+Platform Capabilities // SYSTEM_READY
+
+Subtitle:
+
+High-performance learning modules engineered for rapid career execution.
+
+Reproduce the six module groups from the reference website.
+
+MOD_01
+Guided Learning Paths
+Interactive Modules
+
+MOD_02
+Live Internship Ops
+Tactical Training
+
+MOD_03
+Skill Telemetry
+Deep Analytics
+
+MOD_04
+Skill Validation
+AI Proctoring
+
+MOD_05
+Attendance Verification
+Fortified Access
+
+MOD_06
+Verified Credentials
+Accreditation
+
+Each module should visually resemble the reference website.
+
+Use:
+- futuristic cards
+- code-style labels
+- status indicators
+- subtle borders
+- hover effects
+- animations
+- responsive grid
+
+5. INTERNSHIP TRACKS
+
+Create:
+
+16 Internship Tracks @ ₹1999 ₹1499
+
+Subtitle:
+
+Hands-on tasks, labs, assessments, and certificates for in-demand technologies.
+
+Create cards for the internship programs visible on the reference website, including:
+
+- GenAI / ML
+- Data Science + Data Engineering
+- Cybersecurity
+- Cloud
+- DevOps
+- Salesforce
+- Full-Stack Web
+- Mobile Apps
+- Blockchain
+- IoT
+- UI/UX Design
+- Embedded Systems
+- VLSI Design
+- Game Development
+- Final Year Offline
+- Cloud & DevOps
+
+Each card must be clickable.
+
+For now, clicking a card can navigate to a placeholder course URL such as:
+
+/course/course-name.html
+
+We will build the actual course pages later.
+
+6. GOVERNMENT / CREDENTIAL SECTION
+
+Reproduce the reference section:
+
+Your Gateway to Industry-Ready Excellence
+
+Where National Standards Meet Global Expertise
+
+Include the statistics:
+
+16 Programs
+Internship Tracks
+
+₹1499
+Each
+
+Certified
+Globally Recognized
+
+Government Aligned
+
+NSDC Compliance
+
+Verified Partner
+
+Also reproduce:
+
+Expert Instructors
+Career Ready
+Global Standards
+
+Use an appropriate professional/futuristic visual design consistent with the reference.
+
+7. FINAL CTA
+
+Reproduce:
+
+Start Your Internship Journey Today?
+
+Supporting text:
+
+Enroll instantly in hands-on internships or connect with us for institutional training programs.
+
+Create the form:
+
+Your name
+Your email
+Your phone number
+Program selection
+Get Started
+
+For now:
+- Validate fields using JavaScript
+- Do not send data anywhere
+- Display a success message after valid submission
+- Keep backend integration for later
+
+8. FOOTER
+
+Reproduce the footer structure.
+
+Include:
+
+GenXEraAI System Online
+
+Building the next generation of tech professionals through hands-on learning and real-world experience.
+
+Quick Links:
+Home
+Internships
+Platform
+Contact
+
+Contact details from the reference site should be represented appropriately.
+
+Also include:
+Privacy
+Terms
+Security
+
+9. DESIGN REQUIREMENTS
+
+The visual style should feel:
+
+- Futuristic
+- Premium
+- Technology focused
+- Dark modern interface
+- Professional
+- Clean
+- High contrast
+- Suitable for an AI/technology training company
+
+Do NOT make it look like a generic Bootstrap template.
+
+Use:
+- CSS variables
+- reusable classes
+- CSS Grid/Flexbox
+- responsive breakpoints
+- smooth transitions
+- subtle animations
+- hover effects
+- modern cards
+- clean typography
+
+10. RESPONSIVENESS
+
+The website must work properly on:
+
+- 1920px desktop
+- 1440px desktop
+- 1024px tablet
+- 768px tablet
+- 480px mobile
+- 360px mobile
+
+Do not allow horizontal scrolling.
+
+11. JAVASCRIPT
+
+Implement:
+
+- Mobile menu
+- Smooth scrolling
+- Navigation active state
+- CTA interactions
+- Course card navigation
+- Form validation
+- Success notification
+- Scroll reveal animations where appropriate
+
+Keep JavaScript modular and readable.
+
+12. IMPORTANT DEVELOPMENT RULES
+
+Before creating files, inspect the project structure.
+
+Do not overwrite unrelated existing files.
+
+If files already exist, preserve them unless they are part of this website.
+
+Do not install unnecessary packages.
+
+Do not introduce a framework.
+
+Do not build the backend yet.
+
+Do not implement payment yet.
+
+Do not implement authentication yet.
+
+Do not invent a completely different UI.
+
+The first objective is visual fidelity to:
+
+https://www.genxeraai.com/
+
+After implementation, run the website and verify:
+
+- No console errors
+- No broken links
+- No missing images
+- No horizontal scrolling
+- Mobile menu works
+- All buttons work
+- Form validation works
+- Course cards are clickable
+- Navbar works
+- Page is responsive
+
+Finally, tell me:
+1. Which files you created
+2. Which files you modified
+3. How to run the project
+4. Any remaining differences from the reference website
+
+DO NOT move to backend development yet.
+DO NOT build course detail pages yet.
+
+STOP after completing the homepage.

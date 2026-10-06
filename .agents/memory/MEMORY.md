@@ -1,0 +1,1 @@
+- [GenXEraAI authorization](genxeraai-authorization.md) — the user owns the site and authorized a homepage rebuild for replacement or staging.

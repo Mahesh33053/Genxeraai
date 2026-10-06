@@ -1,0 +1,626 @@
+PROMPT 2 — PIXEL-LEVEL HOMEPAGE CORRECTION
+
+Continue working on the existing GenXEraAI homepage.
+
+IMPORTANT:
+Do NOT rebuild the website from scratch.
+Do NOT delete the existing implementation.
+Do NOT change the technology stack.
+Do NOT create a different design.
+
+Your task is to take the homepage you already created and now make it visually much closer to the real reference website:
+
+REFERENCE:
+https://www.genxeraai.com/
+
+The current implementation has the correct basic structure, but it needs a detailed visual-fidelity correction.
+
+==================================================
+1. FIRST — INSPECT THE CURRENT IMPLEMENTATION
+==================================================
+
+Before modifying anything:
+
+- Inspect all existing HTML files.
+- Inspect CSS files.
+- Inspect JavaScript files.
+- Inspect all assets currently being used.
+- Run the application.
+- Check the current homepage in the browser.
+- Preserve anything that is already working correctly.
+
+Do NOT unnecessarily rewrite working code.
+
+==================================================
+2. HEADER / NAVBAR
+==================================================
+
+Compare the current navbar with the reference website.
+
+Correct:
+
+- Header height
+- Logo size
+- Logo position
+- Horizontal padding
+- Navigation spacing
+- Font sizes
+- Font weights
+- Border
+- Background
+- Mobile hamburger button
+- Desktop/mobile breakpoint behavior
+
+The desktop navbar should not look like a mobile navbar.
+
+On desktop, display:
+
+- GenXEraAI logo
+- Home
+- Internships
+- Platform
+- Collaboration
+- Contact Us
+
+On mobile:
+
+- Keep the logo properly sized
+- Show hamburger menu
+- Menu should open/close smoothly
+- Menu should not cause horizontal scrolling
+
+Make the navbar visually clean and professional.
+
+==================================================
+3. HERO SECTION
+==================================================
+
+This is the most important correction.
+
+The current screenshot shows the hero content is too large and vertically compressed compared with the reference.
+
+Correct:
+
+- Hero top spacing
+- Hero bottom spacing
+- Maximum content width
+- Heading size
+- Heading line height
+- Paragraph width
+- Paragraph line height
+- CTA button dimensions
+- CTA spacing
+- Trust text position
+
+Keep the exact main messaging:
+
+GenXEraAI
+
+Where Curiosity Meets Clarity.
+
+GenXEraAI accelerates your career with immersive, hands-on internships in Artificial Intelligence, Cloud Computing, Full-Stack Development, and VLSI. Master industry-standard tools through real-world projects and expert mentorship. Launch your future today.
+
+Buttons:
+
+Explore Programs
+
+Start Internship - ₹1499
+
+Do not replace the wording with generic content.
+
+==================================================
+4. HERO BACKGROUND
+==================================================
+
+The current preview has a basic light blue/purple background.
+
+Improve it so it more closely resembles the reference.
+
+Use:
+
+- Very subtle technology grid
+- Soft gradient
+- Light blue/white visual atmosphere
+- Subtle purple/blue tint where appropriate
+- Very light background patterns
+- No excessive gradients
+- No distracting animations
+
+The background must remain professional.
+
+Do NOT turn it into a dark neon cyberpunk website.
+
+==================================================
+5. TYPOGRAPHY
+==================================================
+
+Inspect the reference typography carefully.
+
+Correct:
+
+- Font family
+- Font weight
+- Letter spacing
+- Heading scale
+- Paragraph scale
+- Button typography
+- Section heading typography
+- Card typography
+
+Use a consistent typography system.
+
+Create CSS variables for:
+
+--font-heading
+--font-body
+--text-xs
+--text-sm
+--text-base
+--text-lg
+--text-xl
+--text-2xl
+--text-3xl
+--text-4xl
+--text-5xl
+
+Do not randomly assign font sizes throughout the CSS.
+
+==================================================
+6. HERO BUTTONS
+==================================================
+
+The current buttons are functional but need better visual matching.
+
+Correct:
+
+- Width
+- Height
+- Border radius
+- Border
+- Font weight
+- Icon positioning
+- Internal padding
+- Gap between buttons
+- Hover effect
+
+Primary:
+
+Explore Programs ↗
+
+Secondary:
+
+Start Internship - ₹1499
+
+On desktop they should sit naturally next to each other.
+
+On small mobile screens they should stack properly.
+
+==================================================
+7. TRUST STRIP
+==================================================
+
+Correct the positioning of:
+
+Trusted by 1,000+ Students | Colleges | Training Partners
+
+Make it visually subtle.
+
+The "1,000+" should have stronger visual emphasis.
+
+Do not make this section oversized.
+
+==================================================
+8. FOUR VALUE PROPOSITIONS
+==================================================
+
+Reproduce the four value propositions from the reference:
+
+Industry-Grade Curriculum
+Engineered around enterprise use cases
+
+Real-World Development
+Build scalable apps & AI models
+
+Verifiable Certification
+Industry-recognized credentials generated
+
+Accessible Excellence
+Premium paths starting at just ₹1499
+
+Also include:
+
+Perfect for Students
+Freshers
+Career Switchers
+Beginners
+
+Make these visually consistent with the reference.
+
+Do NOT use generic Bootstrap cards.
+
+==================================================
+9. PLATFORM CAPABILITIES
+==================================================
+
+Reproduce this exact section structure:
+
+Platform Capabilities // SYSTEM_READY
+
+High-performance learning modules engineered for rapid career execution.
+
+Create the six module groups:
+
+MOD_01
+Guided Learning Paths
+Interactive Modules
+
+MOD_02
+Live Internship Ops
+Tactical Training
+
+MOD_03
+Skill Telemetry
+Deep Analytics
+
+MOD_04
+Skill Validation
+AI Proctoring
+
+MOD_05
+Attendance Verification
+Fortified Access
+
+MOD_06
+Verified Credentials
+Accreditation
+
+Use:
+
+- Thin borders
+- Technical labels
+- Small status indicators
+- Clean cards
+- Subtle hover states
+- Consistent spacing
+- Technical/futuristic visual language
+
+The cards should feel premium but NOT over-designed.
+
+==================================================
+10. INTERNSHIP TRACKS
+==================================================
+
+Create the section:
+
+16 Internship Tracks @ ₹1999 ₹1499
+
+Subtitle:
+
+Hands-on tasks, labs, assessments, and certificates for in-demand technologies.
+
+Make sure all 16 programs are displayed.
+
+Programs:
+
+1. GenAI / ML
+2. Data Science + Data Engineering
+3. Cybersecurity
+4. Cloud
+5. DevOps
+6. Salesforce
+7. Full-Stack Web
+8. Mobile Apps
+9. Blockchain
+10. IoT
+11. UI/UX Design
+12. Embedded Systems
+13. VLSI Design
+14. Game Development
+15. Final Year Offline
+16. Cloud & DevOps
+
+Cards must have:
+
+- Consistent height
+- Proper spacing
+- Program title
+- Description
+- Pricing
+- CTA
+- Hover interaction
+
+Do not allow cards to become uneven or broken on desktop.
+
+==================================================
+11. GOVERNMENT / CREDENTIAL SECTION
+==================================================
+
+Reproduce:
+
+Government Recognized
+
+Your Gateway to Industry-Ready Excellence
+
+Where National Standards Meet Global Expertise
+
+Include:
+
+16
+Programs
+Internship Tracks
+
+₹1499
+Each
+
+Certified
+Globally Recognized
+
+Government Aligned
+NSDC Compliance
+Verified Partner
+
+Also include:
+
+Expert Instructors
+Career Ready
+Global Standards
+
+This section should have a professional credibility-focused appearance.
+
+==================================================
+12. FINAL CTA
+==================================================
+
+Reproduce:
+
+Start Your Internship Journey Today?
+
+Supporting text:
+
+Enroll instantly in hands-on internships or connect with us for institutional training programs.
+
+Form:
+
+Your name
+Your email
+Your phone number
+Program selection
+Get Started
+
+Keep the current frontend-only validation.
+
+Do not create backend/API functionality yet.
+
+After valid submission:
+
+Show a clean success notification.
+
+==================================================
+13. FOOTER
+==================================================
+
+Reproduce the footer structure.
+
+Include:
+
+GenXEraAI System Online
+
+Building the next generation of tech professionals through hands-on learning and real-world experience.
+
+Quick Links:
+
+Home
+Internships
+Platform
+Contact
+
+Also:
+
+Privacy
+Terms
+Security
+
+Keep the footer clean and professional.
+
+==================================================
+14. SPACING SYSTEM
+==================================================
+
+This is extremely important.
+
+The current page feels slightly compressed.
+
+Create a consistent spacing system.
+
+Use CSS variables such as:
+
+--space-xs
+--space-sm
+--space-md
+--space-lg
+--space-xl
+--space-2xl
+--section-padding
+
+Every major section should have consistent vertical spacing.
+
+Do not manually use random margins everywhere.
+
+==================================================
+15. RESPONSIVE DESIGN
+==================================================
+
+Test all of these:
+
+1920px
+1440px
+1280px
+1024px
+768px
+480px
+390px
+360px
+
+At every width verify:
+
+- No horizontal scrollbar
+- No overlapping text
+- No clipped buttons
+- No oversized headings
+- No broken cards
+- No navigation overflow
+- Proper section spacing
+- Proper mobile menu
+
+On mobile:
+
+- Hero heading must scale down
+- Paragraph must remain readable
+- Buttons should stack
+- Cards should become one column where appropriate
+- Section padding must reduce
+- Navbar must remain usable
+
+==================================================
+16. ANIMATIONS
+==================================================
+
+Use subtle animations only.
+
+Add:
+
+- Button hover
+- Card hover
+- Smooth scrolling
+- Scroll reveal where appropriate
+- Mobile menu animation
+
+Avoid:
+
+- Excessive bouncing
+- Excessive glowing
+- Distracting moving backgrounds
+- Heavy animation libraries
+
+Keep the website fast.
+
+==================================================
+17. ACCESSIBILITY
+==================================================
+
+Add:
+
+- Proper alt text
+- Semantic HTML
+- Keyboard-accessible buttons
+- Visible focus states
+- Proper form labels
+- Accessible mobile menu
+- Correct heading hierarchy
+
+==================================================
+18. CODE QUALITY
+==================================================
+
+Keep:
+
+HTML
+CSS
+JavaScript
+
+separated cleanly.
+
+Do not introduce React.
+
+Do not introduce unnecessary packages.
+
+Do not add Bootstrap.
+
+Do not add a backend.
+
+Do not add authentication.
+
+Do not add payment.
+
+Do not add database functionality.
+
+Do not create fake API endpoints.
+
+==================================================
+19. FUNCTIONALITY CHECK
+==================================================
+
+After making the visual corrections, test:
+
+- Navbar links
+- Mobile menu
+- Explore Programs button
+- Start Internship button
+- Internship cards
+- Smooth scrolling
+- Form validation
+- Success message
+- Footer links
+
+No dead buttons.
+
+No console errors.
+
+No broken assets.
+
+No 404 errors caused by your changes.
+
+==================================================
+20. IMPORTANT — DO NOT MODIFY THE OVERALL DESIGN
+==================================================
+
+The goal is NOT to make a "better looking" website.
+
+The goal is to make the existing implementation visually closer to:
+
+https://www.genxeraai.com/
+
+Use the reference website as the visual source of truth.
+
+Preserve the current content and structure wherever they are already accurate.
+
+Do not replace the design with a generic AI SaaS template.
+
+==================================================
+21. FINAL VERIFICATION
+==================================================
+
+After implementation:
+
+1. Run the project.
+2. Open the homepage.
+3. Check desktop view.
+4. Check mobile view.
+5. Check browser console.
+6. Check all links.
+7. Check all buttons.
+8. Check form validation.
+9. Check for horizontal scrolling.
+10. Check for missing assets.
+
+Then provide a concise report:
+
+- Files modified
+- Files created
+- Visual improvements made
+- Functionality tested
+- Any remaining differences from https://www.genxeraai.com/
+
+IMPORTANT:
+
+STOP after completing the homepage correction.
+
+DO NOT build the Internships page yet.
+
+DO NOT build course pages yet.
+
+DO NOT build the backend yet.
+
+DO NOT change the project architecture.
+
+The next task will be handled separately.

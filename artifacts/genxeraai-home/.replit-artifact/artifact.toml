@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "GenXEraAI Homepage"
+description = "A responsive homepage rebuild for GenXEraAI, matching the existing site while keeping the frontend in semantic HTML, custom CSS, and vanilla JavaScript."
+version = "1.0.0"
+id = "artifacts/genxeraai-home"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20616
+
+[services.development]
+run = "pnpm --filter @workspace/genxeraai-home run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/genxeraai-home", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/genxeraai-home/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20616"
+BASE_PATH = "/"
