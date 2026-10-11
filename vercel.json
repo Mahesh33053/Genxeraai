@@ -7,7 +7,7 @@
   "rewrites": [
     {
       "source": "/internships/:slug",
-      "destination": "/internship.html?track=:slug"
+      "destination": "/internship?track=:slug"
     },
     {
       "source": "/internships",
