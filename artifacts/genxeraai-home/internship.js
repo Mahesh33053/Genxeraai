@@ -997,7 +997,7 @@
         </div>
 
         <div class="track-hero-actions">
-          <a class="button button-primary track-hero-enroll" href="${getWhatsAppTrackUrl(track.title)}" target="_blank" rel="noopener noreferrer">Enroll Now <span>→</span></a>
+          <a class="button button-primary track-hero-enroll" href="#enroll">Enroll Now <span>→</span></a>
           <a class="button button-outline" href="/#internships">← View All Internships</a>
         </div>
       </div>
@@ -1181,15 +1181,30 @@
     return `https://wa.me/919390560407?text=${encodeURIComponent(msg)}`;
   }
 
-  // Update header enroll button
+  // Setup header enroll button to scroll smoothly to #enroll section
   const headerEnrollBtn = document.getElementById("header-enroll-btn");
   if (headerEnrollBtn) {
-    headerEnrollBtn.href = getWhatsAppTrackUrl(track.title);
-    headerEnrollBtn.target = "_blank";
-    headerEnrollBtn.rel = "noopener noreferrer";
+    headerEnrollBtn.href = "#enroll";
+    headerEnrollBtn.removeAttribute("target");
+    headerEnrollBtn.removeAttribute("rel");
   }
 
-  // Update direct CTA WhatsApp button
+  // Smooth scroll handler for top Enroll Now buttons with sticky header offset
+  document.querySelectorAll('a[href="#enroll"]').forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const target = document.getElementById("enroll");
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        const nameField = document.getElementById("enroll-name");
+        if (nameField) {
+          setTimeout(() => nameField.focus({ preventScroll: true }), 400);
+        }
+      }
+    });
+  });
+
+  // Update direct CTA WhatsApp button in the bottom enrollment section
   const directWaBtn = document.getElementById("cta-direct-wa-btn");
   if (directWaBtn) {
     directWaBtn.href = getWhatsAppTrackUrl(track.title);
