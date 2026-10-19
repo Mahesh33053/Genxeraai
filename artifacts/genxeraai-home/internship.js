@@ -1189,19 +1189,25 @@
     headerEnrollBtn.removeAttribute("rel");
   }
 
-  // Smooth scroll handler for top Enroll Now buttons with sticky header offset
+  // Smooth scroll handler for Enroll Now buttons with accurate sticky navbar offset
+  const scrollToEnroll = (e) => {
+    const target = document.getElementById("enroll");
+    if (!target) return;
+    if (e) e.preventDefault();
+
+    // Prefer scrollIntoView with block: "start" which respects CSS scroll-margin-top
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   document.querySelectorAll('a[href="#enroll"]').forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      const target = document.getElementById("enroll");
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-        const nameField = document.getElementById("enroll-name");
-        if (nameField) {
-          setTimeout(() => nameField.focus({ preventScroll: true }), 400);
-        }
-      }
-    });
+    btn.addEventListener("click", scrollToEnroll);
+  });
+
+  document.addEventListener("click", (e) => {
+    const enrollBtn = e.target.closest('a[href="#enroll"]');
+    if (enrollBtn) {
+      scrollToEnroll(e);
+    }
   });
 
   // Update direct CTA WhatsApp button in the bottom enrollment section

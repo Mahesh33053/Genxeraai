@@ -2153,6 +2153,12 @@ body[data-theme="dark"] .structure-timeline::before {
 }
 
 /* Enrollment CTA Section */
+#enroll,
+.track-cta-section {
+  scroll-margin-top: 86px;
+  padding-top: 48px;
+}
+
 .cta-banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2349,6 +2355,11 @@ body[data-theme="dark"] .form-field select:focus {
 @media (max-width: 768px) {
   html { scroll-padding-top: 66px; }
   .site-header { height: 62px; }
+  #enroll,
+  .track-cta-section {
+    scroll-margin-top: 76px;
+    padding-top: 36px;
+  }
   .nav-shell { padding: 0 18px; }
 
   .menu-toggle {
