@@ -169,7 +169,7 @@
           {
             "@type": "Course",
             "position": 12,
-            "name": "Final Year Offline Project Guidance",
+            "name": "Final Year Offline Internship",
             "description": "Academic major project development, IEEE documentation, and viva defense coaching.",
             "url": "https://www.genxeraai.com/internships/final-year-offline",
             "provider": { "@id": "https://www.genxeraai.com/#organization" }
@@ -187,6 +187,7 @@
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><i></i><i></i><i></i></button>
       <nav class="main-nav" id="main-nav" aria-label="Main navigation">
         <a href="#home" class="nav-link active">Home</a>
+        <a href="#synergy" class="nav-link">Human + AI</a>
         <a href="#internships" class="nav-link">Internships</a>
         <a href="#platform" class="nav-link">Platform</a>
         <button class="theme-toggle" type="button" aria-label="Switch to dark theme"><span class="theme-symbol" aria-hidden="true">☼</span></button>
@@ -199,7 +200,7 @@
       <div class="hero-inner reveal">
         <h1>GenXEraAI</h1>
         <h2>Where Curiosity Meets <span>Clarity.</span></h2>
-        <p class="hero-copy">Hands-on technology education designed to help you learn, build, and launch with confidence.<br>Master AI, software development, cloud technologies, and emerging technologies through real-world projects and expert guidance.</p>
+        <p class="hero-copy">Hands-on technology education designed to help you learn, build, and launch with confidence. Master AI, software development, cloud technologies, and emerging technologies through real-world projects and expert guidance.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#platform">Explore Programs <span aria-hidden="true">↗</span></a>
           <a class="button button-outline" href="https://wa.me/919390560407?text=Hi%20GenXEraAI%2C%20I%20am%20interested%20in%20enrolling%20in%20your%20internship%20programs.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer">Enroll Now - ₹1499</a>
@@ -213,7 +214,186 @@
         </div>
         <p class="audience-line">Designed for <span>Students</span><b>|</b><span>Freshers</span><b>|</b><span>Career Switchers</span><b>|</b><span>Beginners</span></p>
       </div>
-      <a class="scroll-cue" href="#platform" aria-label="Scroll to platform">↓</a>
+      <a class="scroll-cue" href="#synergy" aria-label="Scroll to Human and AI collaboration showcase">↓</a>
+    </section>
+
+    <!-- HUMAN & ROBOT CO-LEARNING & SYNERGY SHOWCASE -->
+    <section class="section synergy-section" id="synergy" aria-label="Human and AI Collaboration">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span class="synergy-pulse"></span> Human &amp; Robot Co-Intelligence</p>
+        <h2>Where Human Insight Teaches <em>Artificial Intelligence.</em></h2>
+        <p>Experience the frontier of hands-on technology: humans and intelligent humanoid robots learning, reading, coding, and engineering together in real-world environments.</p>
+      </div>
+
+      <div class="synergy-showcase-container reveal">
+        <!-- Interactive Controls / Tab Switcher -->
+        <div class="synergy-tabs" role="tablist" aria-label="Synergy Experiences">
+          <button class="synergy-tab-btn active" role="tab" id="tab-reading" aria-selected="true" aria-controls="panel-reading" data-target="reading">
+            <span class="tab-icon" aria-hidden="true">📖</span>
+            <span class="tab-text">
+              <strong>Teaching AI to Read &amp; Reason</strong>
+              <small>Holographic Textbooks &amp; Knowledge Synthesis</small>
+            </span>
+            <span class="tab-pill">Cognitive Lab</span>
+          </button>
+          <button class="synergy-tab-btn" role="tab" id="tab-working" aria-selected="false" aria-controls="panel-working" data-target="working">
+            <span class="tab-icon" aria-hidden="true">⚡</span>
+            <span class="tab-text">
+              <strong>Teaching Robots to Work &amp; Engineer</strong>
+              <small>Hardware Micro-Assembly &amp; Python Logic</small>
+            </span>
+            <span class="tab-pill">Robotics Lab</span>
+          </button>
+        </div>
+
+        <!-- 3D Interactive Stage -->
+        <div class="synergy-stage-wrapper">
+          <!-- Background Interactive Neural Particle Canvas -->
+          <canvas id="synergy-canvas" class="synergy-particle-canvas" aria-hidden="true"></canvas>
+
+          <!-- Stage 1: Reading & Knowledge Transfer -->
+          <div class="synergy-panel active" id="panel-reading" role="tabpanel" aria-labelledby="tab-reading">
+            <div class="synergy-media-card" data-tilt>
+              <div class="media-sheen" aria-hidden="true"></div>
+              <img src="./assets/images/human-robot-reading.jpg" alt="A human mentor teaching a humanoid robot to read from a glowing holographic book" class="synergy-img" width="1280" height="720" loading="lazy">
+              
+              <!-- Hotspots -->
+              <div class="synergy-hotspot hotspot-1" style="top: 72%; left: 48%;">
+                <button class="hotspot-trigger" type="button" aria-expanded="false" aria-label="Holographic Textbook Details">
+                  <span class="hotspot-core"></span>
+                  <span class="hotspot-ring"></span>
+                </button>
+                <div class="hotspot-popover" role="tooltip">
+                  <div class="popover-badge">Multimodal NLP</div>
+                  <h4>Holographic Knowledge Transfer</h4>
+                  <p>Human mentor walks the AI model through architectural blueprints and mathematical theorem proofs in real time.</p>
+                </div>
+              </div>
+
+              <div class="synergy-hotspot hotspot-2" style="top: 30%; left: 68%;">
+                <button class="hotspot-trigger" type="button" aria-expanded="false" aria-label="Robot Vision System Details">
+                  <span class="hotspot-core"></span>
+                  <span class="hotspot-ring"></span>
+                </button>
+                <div class="hotspot-popover" role="tooltip">
+                  <div class="popover-badge">Computer Vision</div>
+                  <h4>Attentive Optical Perception</h4>
+                  <p>Expressive humanoid sensors track ocular cues and gesture synthesis for natural human-robot pedagogical bonding.</p>
+                </div>
+              </div>
+
+              <div class="synergy-hotspot hotspot-3" style="top: 38%; left: 42%;">
+                <button class="hotspot-trigger" type="button" aria-expanded="false" aria-label="Human Mentorship Details">
+                  <span class="hotspot-core"></span>
+                  <span class="hotspot-ring"></span>
+                </button>
+                <div class="hotspot-popover" role="tooltip">
+                  <div class="popover-badge">RLHF Pedagogy</div>
+                  <h4>Human-in-the-Loop Guidance</h4>
+                  <p>GenXEraAI trainees learn how to guide and fine-tune large cognitive models with ethical discernment and clarity.</p>
+                </div>
+              </div>
+
+              <!-- Telemetry Overlay Floating Bar -->
+              <div class="telemetry-glass-badge">
+                <span class="t-indicator"><span class="t-pulsar"></span> Model Ingestion: Active</span>
+                <span class="t-stat"><b>1,420</b> tokens/s</span>
+                <span class="t-stat">Accuracy: <b>99.8%</b></span>
+              </div>
+            </div>
+
+            <!-- Contextual Description Card -->
+            <div class="synergy-info-card">
+              <div class="info-header">
+                <span class="info-kicker">Interactive Pedagogy</span>
+                <h3>Teaching the Mind of Tomorrow</h3>
+                <p>In our AI/ML and Data Science programs, you don't just write scripts — you train cognitive intelligences to comprehend structured knowledge, read technical literature, and synthesize solutions.</p>
+              </div>
+              <div class="info-pills">
+                <span class="feature-tag">Multimodal Transformers</span>
+                <span class="feature-tag">Document OCR Intelligence</span>
+                <span class="feature-tag">Cognitive Alignment</span>
+                <span class="feature-tag">Real-Time Knowledge Graphs</span>
+              </div>
+              <div class="info-action">
+                <a class="button button-primary" href="/internships/ai-ml">Explore AI &amp; ML Track ↗</a>
+                <a class="button button-outline" href="https://wa.me/919390560407?text=Hi%20GenXEraAI%2C%20I%20am%20curious%20about%20your%20AI%20and%20Robotics%20curriculum." target="_blank" rel="noopener noreferrer">Inquire with Mentor</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 2: Hardware & Engineering Interaction -->
+          <div class="synergy-panel" id="panel-working" role="tabpanel" aria-labelledby="tab-working" hidden>
+            <div class="synergy-media-card" data-tilt>
+              <div class="media-sheen" aria-hidden="true"></div>
+              <img src="./assets/images/human-robot-working.jpg" alt="A software engineer guiding a humanoid robot assembling microchips in an electronics lab" class="synergy-img" width="1280" height="720" loading="lazy">
+              
+              <!-- Hotspots -->
+              <div class="synergy-hotspot hotspot-1" style="top: 75%; left: 52%;">
+                <button class="hotspot-trigger" type="button" aria-expanded="false" aria-label="Microchip Soldering Details">
+                  <span class="hotspot-core"></span>
+                  <span class="hotspot-ring"></span>
+                </button>
+                <div class="hotspot-popover" role="tooltip">
+                  <div class="popover-badge">VLSI &amp; Embedded</div>
+                  <h4>Precision Micro-Assembly</h4>
+                  <p>Guiding robotic precision to place and solder neural silicon architectures with sub-millimeter tolerances.</p>
+                </div>
+              </div>
+
+              <div class="synergy-hotspot hotspot-2" style="top: 25%; left: 35%;">
+                <button class="hotspot-trigger" type="button" aria-expanded="false" aria-label="Holographic Code Details">
+                  <span class="hotspot-core"></span>
+                  <span class="hotspot-ring"></span>
+                </button>
+                <div class="hotspot-popover" role="tooltip">
+                  <div class="popover-badge">Firmware Execution</div>
+                  <h4>Live Logic Ingestion</h4>
+                  <p>Real-time execution of <code>robot_logic.py</code> streaming telemetry directly to microcontroller bus channels.</p>
+                </div>
+              </div>
+
+              <div class="synergy-hotspot hotspot-3" style="top: 48%; left: 66%;">
+                <button class="hotspot-trigger" type="button" aria-expanded="false" aria-label="Haptic Collaboration Details">
+                  <span class="hotspot-core"></span>
+                  <span class="hotspot-ring"></span>
+                </button>
+                <div class="hotspot-popover" role="tooltip">
+                  <div class="popover-badge">Actuator Telemetry</div>
+                  <h4>Co-Operative Kinematics</h4>
+                  <p>Human hands calibrating tactile sensors and torque feedback on multi-axis robotic joints.</p>
+                </div>
+              </div>
+
+              <!-- Telemetry Overlay Floating Bar -->
+              <div class="telemetry-glass-badge">
+                <span class="t-indicator"><span class="t-pulsar active-cyan"></span> Hardware Status: Synchronized</span>
+                <span class="t-stat">Bus Latency: <b>1.8ms</b></span>
+                <span class="t-stat">Joint Calibration: <b>0.02mm</b></span>
+              </div>
+            </div>
+
+            <!-- Contextual Description Card -->
+            <div class="synergy-info-card">
+              <div class="info-header">
+                <span class="info-kicker">Physical Computing &amp; Systems</span>
+                <h3>Engineering Next-Gen Hardware</h3>
+                <p>Step onto the physical frontier with Embedded Systems, IoT, and VLSI tracks. Learn how to write the software, design the circuits, and calibrate the actuators that power autonomous robotics.</p>
+              </div>
+              <div class="info-pills">
+                <span class="feature-tag">RTOS &amp; Microcontrollers</span>
+                <span class="feature-tag">VLSI Circuit Design</span>
+                <span class="feature-tag">Python &amp; C++ Robotics</span>
+                <span class="feature-tag">IoT Sensor Telemetry</span>
+              </div>
+              <div class="info-action">
+                <a class="button button-primary" href="/internships/embedded-systems">Explore Embedded Track ↗</a>
+                <a class="button button-outline" href="https://wa.me/919390560407?text=Hi%20GenXEraAI%2C%20I%20am%20interested%20in%20Embedded%20Systems%20and%20Robotics." target="_blank" rel="noopener noreferrer">Inquire with Mentor</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section platform-section" id="platform">
@@ -240,7 +420,7 @@
               </div>
               <div class="metric-divider" aria-hidden="true"></div>
               <div class="metric-item">
-                <span class="metric-num">12+</span>
+                <span class="metric-num">12</span>
                 <span class="metric-lbl">Technology Tracks</span>
               </div>
               <div class="metric-divider" aria-hidden="true"></div>
@@ -488,6 +668,7 @@
       <div class="footer-col">
         <h3>Quick Links</h3>
         <a href="#home">Home</a>
+        <a href="#synergy">Human + AI</a>
         <a href="#internships">Internships</a>
         <a href="#platform">Platform</a>
         <a href="#contact">Contact Us</a>

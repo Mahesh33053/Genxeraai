@@ -53,3 +53,5 @@ Thumbs.db
 .local/
 .agents/
 .conversation/
+
+.vercel
