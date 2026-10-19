@@ -187,11 +187,12 @@
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><i></i><i></i><i></i></button>
       <nav class="main-nav" id="main-nav" aria-label="Main navigation">
         <a href="#home" class="nav-link active">Home</a>
+        <a href="/platform" class="nav-link">Platform</a>
         <a href="/courses" class="nav-link">Courses</a>
         <a href="/workshops" class="nav-link">Workshops</a>
-        <a href="#internships" class="nav-link">Internships</a>
+        <a href="#internships" class="nav-link">Summer Internships</a>
         <button class="theme-toggle" type="button" aria-label="Switch to dark theme"><span class="theme-symbol" aria-hidden="true">☼</span></button>
-        <a class="nav-contact" href="https://wa.me/919390560407?text=Hi%20GenXEraAI%2C%20I%20would%20like%20to%20know%20more%20about%20your%20programs%2C%20courses%2C%20workshops%2C%20and%20internships." target="_blank" rel="noopener noreferrer">Contact Us</a>
+        <button class="btn btn-sm btn-primary nav-cta" type="button" data-open-modal="enroll">Enroll Now</button>
       </nav>
     </div>
   </header>
@@ -202,8 +203,8 @@
         <h2>Where Curiosity Meets <span>Clarity.</span></h2>
         <p class="hero-copy">Hands-on technology education designed to help you learn, build, and launch with confidence. Master AI, software development, cloud technologies, and emerging technologies through real-world projects and expert guidance.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#platform">Explore Programs <span aria-hidden="true">↗</span></a>
-          <a class="button button-outline" href="https://wa.me/919390560407?text=Hi%20GenXEraAI%2C%20I%20am%20interested%20in%20enrolling%20in%20your%20internship%20programs.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer">Enroll Now - ₹1499</a>
+          <a class="button button-primary" href="/platform">Explore Platform <span aria-hidden="true">↗</span></a>
+          <button class="button button-outline" type="button" data-open-modal="enroll">Enroll Now - ₹1499</button>
         </div>
         <p class="trust-line">Trusted by <strong>1,000+</strong> students, colleges, and training partners</p>
         <div class="benefits">
@@ -214,186 +215,7 @@
         </div>
         <p class="audience-line">Designed for <span>Students</span><b>|</b><span>Freshers</span><b>|</b><span>Career Switchers</span><b>|</b><span>Beginners</span></p>
       </div>
-      <a class="scroll-cue" href="#synergy" aria-label="Scroll to Human and AI collaboration showcase">↓</a>
-    </section>
-
-    <!-- HUMAN & ROBOT CO-LEARNING & SYNERGY SHOWCASE -->
-    <section class="section synergy-section" id="synergy" aria-label="Human and AI Collaboration">
-      <div class="section-heading reveal">
-        <p class="eyebrow"><span class="synergy-pulse"></span> Human &amp; Robot Co-Intelligence</p>
-        <h2>Where Human Insight Teaches <em>Artificial Intelligence.</em></h2>
-        <p>Experience the frontier of hands-on technology: humans and intelligent humanoid robots learning, reading, coding, and engineering together in real-world environments.</p>
-      </div>
-
-      <div class="synergy-showcase-container reveal">
-        <!-- Interactive Controls / Tab Switcher -->
-        <div class="synergy-tabs" role="tablist" aria-label="Synergy Experiences">
-          <button class="synergy-tab-btn active" role="tab" id="tab-reading" aria-selected="true" aria-controls="panel-reading" data-target="reading">
-            <span class="tab-icon" aria-hidden="true">📖</span>
-            <span class="tab-text">
-              <strong>Teaching AI to Read &amp; Reason</strong>
-              <small>Holographic Textbooks &amp; Knowledge Synthesis</small>
-            </span>
-            <span class="tab-pill">Cognitive Lab</span>
-          </button>
-          <button class="synergy-tab-btn" role="tab" id="tab-working" aria-selected="false" aria-controls="panel-working" data-target="working">
-            <span class="tab-icon" aria-hidden="true">⚡</span>
-            <span class="tab-text">
-              <strong>Teaching Robots to Work &amp; Engineer</strong>
-              <small>Hardware Micro-Assembly &amp; Python Logic</small>
-            </span>
-            <span class="tab-pill">Robotics Lab</span>
-          </button>
-        </div>
-
-        <!-- 3D Interactive Stage -->
-        <div class="synergy-stage-wrapper">
-          <!-- Background Interactive Neural Particle Canvas -->
-          <canvas id="synergy-canvas" class="synergy-particle-canvas" aria-hidden="true"></canvas>
-
-          <!-- Stage 1: Reading & Knowledge Transfer -->
-          <div class="synergy-panel active" id="panel-reading" role="tabpanel" aria-labelledby="tab-reading">
-            <div class="synergy-media-card" data-tilt>
-              <div class="media-sheen" aria-hidden="true"></div>
-              <img src="./assets/images/human-robot-reading.jpg" alt="A human mentor teaching a humanoid robot to read from a glowing holographic book" class="synergy-img" width="1280" height="720" loading="lazy">
-              
-              <!-- Hotspots -->
-              <div class="synergy-hotspot hotspot-1" style="top: 72%; left: 48%;">
-                <button class="hotspot-trigger" type="button" aria-expanded="false" aria-label="Holographic Textbook Details">
-                  <span class="hotspot-core"></span>
-                  <span class="hotspot-ring"></span>
-                </button>
-                <div class="hotspot-popover" role="tooltip">
-                  <div class="popover-badge">Multimodal NLP</div>
-                  <h4>Holographic Knowledge Transfer</h4>
-                  <p>Human mentor walks the AI model through architectural blueprints and mathematical theorem proofs in real time.</p>
-                </div>
-              </div>
-
-              <div class="synergy-hotspot hotspot-2" style="top: 30%; left: 68%;">
-                <button class="hotspot-trigger" type="button" aria-expanded="false" aria-label="Robot Vision System Details">
-                  <span class="hotspot-core"></span>
-                  <span class="hotspot-ring"></span>
-                </button>
-                <div class="hotspot-popover" role="tooltip">
-                  <div class="popover-badge">Computer Vision</div>
-                  <h4>Attentive Optical Perception</h4>
-                  <p>Expressive humanoid sensors track ocular cues and gesture synthesis for natural human-robot pedagogical bonding.</p>
-                </div>
-              </div>
-
-              <div class="synergy-hotspot hotspot-3" style="top: 38%; left: 42%;">
-                <button class="hotspot-trigger" type="button" aria-expanded="false" aria-label="Human Mentorship Details">
-                  <span class="hotspot-core"></span>
-                  <span class="hotspot-ring"></span>
-                </button>
-                <div class="hotspot-popover" role="tooltip">
-                  <div class="popover-badge">RLHF Pedagogy</div>
-                  <h4>Human-in-the-Loop Guidance</h4>
-                  <p>GenXEraAI trainees learn how to guide and fine-tune large cognitive models with ethical discernment and clarity.</p>
-                </div>
-              </div>
-
-              <!-- Telemetry Overlay Floating Bar -->
-              <div class="telemetry-glass-badge">
-                <span class="t-indicator"><span class="t-pulsar"></span> Model Ingestion: Active</span>
-                <span class="t-stat"><b>1,420</b> tokens/s</span>
-                <span class="t-stat">Accuracy: <b>99.8%</b></span>
-              </div>
-            </div>
-
-            <!-- Contextual Description Card -->
-            <div class="synergy-info-card">
-              <div class="info-header">
-                <span class="info-kicker">Interactive Pedagogy</span>
-                <h3>Teaching the Mind of Tomorrow</h3>
-                <p>In our AI/ML and Data Science programs, you don't just write scripts — you train cognitive intelligences to comprehend structured knowledge, read technical literature, and synthesize solutions.</p>
-              </div>
-              <div class="info-pills">
-                <span class="feature-tag">Multimodal Transformers</span>
-                <span class="feature-tag">Document OCR Intelligence</span>
-                <span class="feature-tag">Cognitive Alignment</span>
-                <span class="feature-tag">Real-Time Knowledge Graphs</span>
-              </div>
-              <div class="info-action">
-                <a class="button button-primary" href="/internships/ai-ml">Explore AI &amp; ML Track ↗</a>
-                <a class="button button-outline" href="https://wa.me/919390560407?text=Hi%20GenXEraAI%2C%20I%20am%20curious%20about%20your%20AI%20and%20Robotics%20curriculum." target="_blank" rel="noopener noreferrer">Inquire with Mentor</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Stage 2: Hardware & Engineering Interaction -->
-          <div class="synergy-panel" id="panel-working" role="tabpanel" aria-labelledby="tab-working" hidden>
-            <div class="synergy-media-card" data-tilt>
-              <div class="media-sheen" aria-hidden="true"></div>
-              <img src="./assets/images/human-robot-working.jpg" alt="A software engineer guiding a humanoid robot assembling microchips in an electronics lab" class="synergy-img" width="1280" height="720" loading="lazy">
-              
-              <!-- Hotspots -->
-              <div class="synergy-hotspot hotspot-1" style="top: 75%; left: 52%;">
-                <button class="hotspot-trigger" type="button" aria-expanded="false" aria-label="Microchip Soldering Details">
-                  <span class="hotspot-core"></span>
-                  <span class="hotspot-ring"></span>
-                </button>
-                <div class="hotspot-popover" role="tooltip">
-                  <div class="popover-badge">VLSI &amp; Embedded</div>
-                  <h4>Precision Micro-Assembly</h4>
-                  <p>Guiding robotic precision to place and solder neural silicon architectures with sub-millimeter tolerances.</p>
-                </div>
-              </div>
-
-              <div class="synergy-hotspot hotspot-2" style="top: 25%; left: 35%;">
-                <button class="hotspot-trigger" type="button" aria-expanded="false" aria-label="Holographic Code Details">
-                  <span class="hotspot-core"></span>
-                  <span class="hotspot-ring"></span>
-                </button>
-                <div class="hotspot-popover" role="tooltip">
-                  <div class="popover-badge">Firmware Execution</div>
-                  <h4>Live Logic Ingestion</h4>
-                  <p>Real-time execution of <code>robot_logic.py</code> streaming telemetry directly to microcontroller bus channels.</p>
-                </div>
-              </div>
-
-              <div class="synergy-hotspot hotspot-3" style="top: 48%; left: 66%;">
-                <button class="hotspot-trigger" type="button" aria-expanded="false" aria-label="Haptic Collaboration Details">
-                  <span class="hotspot-core"></span>
-                  <span class="hotspot-ring"></span>
-                </button>
-                <div class="hotspot-popover" role="tooltip">
-                  <div class="popover-badge">Actuator Telemetry</div>
-                  <h4>Co-Operative Kinematics</h4>
-                  <p>Human hands calibrating tactile sensors and torque feedback on multi-axis robotic joints.</p>
-                </div>
-              </div>
-
-              <!-- Telemetry Overlay Floating Bar -->
-              <div class="telemetry-glass-badge">
-                <span class="t-indicator"><span class="t-pulsar active-cyan"></span> Hardware Status: Synchronized</span>
-                <span class="t-stat">Bus Latency: <b>1.8ms</b></span>
-                <span class="t-stat">Joint Calibration: <b>0.02mm</b></span>
-              </div>
-            </div>
-
-            <!-- Contextual Description Card -->
-            <div class="synergy-info-card">
-              <div class="info-header">
-                <span class="info-kicker">Physical Computing &amp; Systems</span>
-                <h3>Engineering Next-Gen Hardware</h3>
-                <p>Step onto the physical frontier with Embedded Systems, IoT, and VLSI tracks. Learn how to write the software, design the circuits, and calibrate the actuators that power autonomous robotics.</p>
-              </div>
-              <div class="info-pills">
-                <span class="feature-tag">RTOS &amp; Microcontrollers</span>
-                <span class="feature-tag">VLSI Circuit Design</span>
-                <span class="feature-tag">Python &amp; C++ Robotics</span>
-                <span class="feature-tag">IoT Sensor Telemetry</span>
-              </div>
-              <div class="info-action">
-                <a class="button button-primary" href="/internships/embedded-systems">Explore Embedded Track ↗</a>
-                <a class="button button-outline" href="https://wa.me/919390560407?text=Hi%20GenXEraAI%2C%20I%20am%20interested%20in%20Embedded%20Systems%20and%20Robotics." target="_blank" rel="noopener noreferrer">Inquire with Mentor</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <a class="scroll-cue" href="#offerings" aria-label="Scroll to educational offerings">↓</a>
     </section>
 
     <!-- LEARNING OFFERINGS OVERVIEW (COURSES, WORKSHOPS & INTERNSHIPS) -->
@@ -440,249 +262,45 @@
           </div>
         </article>
 
-        <!-- 3. INTERNSHIPS -->
+        <!-- 3. SUMMER INTERNSHIPS -->
         <article class="offering-card reveal">
           <div class="offering-card-head">
             <span class="offering-badge">Hands-On Experience</span>
             <span class="track-id">03</span>
           </div>
-          <h3>Internships</h3>
+          <h3>Summer Internships</h3>
           <div class="offering-pricing-line">
             <span class="price-main">₹1,499</span>
             <span class="price-strike">₹1,999</span>
             <span class="price-discount-badge">Starting Price</span>
           </div>
-          <p>12 structured internship tracks featuring guided labs, capstone software development, 1-on-1 mentor guidance, and verifiable digital credentials.</p>
+          <p>12 structured Summer Internship tracks featuring guided labs, capstone software development, 1-on-1 mentor guidance, and verifiable digital credentials.</p>
           <div class="offering-card-action">
-            <a class="button button-outline" href="#internships">View 12 Tracks <span>→</span></a>
+            <a class="button button-outline" href="#internships">View Summer Tracks <span>→</span></a>
           </div>
         </article>
-      </div>
-    </section>
-
-    <section class="section platform-section" id="platform">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Platform Capabilities</p>
-        <h2>Everything you need to <em>build what's next.</em></h2>
-        <p>From guided learning to verified skills, GenXEraAI gives you the tools to turn curiosity into capability.</p>
-      </div>
-
-      <div class="platform-ecosystem-container">
-        <!-- DOMINANT FULL-WIDTH HERO PANEL -->
-        <div class="bento-hero-panel reveal">
-          <div class="bento-hero-top">
-            <span class="bento-pill"><span class="pulse-dot"></span> Platform Ecosystem</span>
-            <h3 class="bento-hero-title">Learn with clarity.<br><em>Build with confidence.</em></h3>
-            <p class="bento-hero-sub">An integrated learning experience that connects fundamentals, hands-on practice, skill validation, and career-ready outcomes.</p>
-          </div>
-
-          <div class="bento-hero-bottom">
-            <div class="bento-metrics">
-              <div class="metric-item">
-                <span class="metric-num">100%</span>
-                <span class="metric-lbl">Practical Execution</span>
-              </div>
-              <div class="metric-divider" aria-hidden="true"></div>
-              <div class="metric-item">
-                <span class="metric-num">12</span>
-                <span class="metric-lbl">Technology Tracks</span>
-              </div>
-              <div class="metric-divider" aria-hidden="true"></div>
-              <div class="metric-item">
-                <span class="metric-num">Verified</span>
-                <span class="metric-lbl">Digital Credentials</span>
-              </div>
-            </div>
-
-            <div class="telemetry-bar" aria-label="System status">
-              <div class="telemetry-item">
-                <span class="t-dot"></span>
-                <span class="t-label">System</span>
-                <span class="t-val">Online</span>
-              </div>
-              <span class="telemetry-sep">|</span>
-              <div class="telemetry-item">
-                <span class="t-dot"></span>
-                <span class="t-label">Evaluation</span>
-                <span class="t-val">Automated</span>
-              </div>
-              <span class="telemetry-sep">|</span>
-              <div class="telemetry-item">
-                <span class="t-dot"></span>
-                <span class="t-label">Credentials</span>
-                <span class="t-val">Verifiable</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 01: GUIDED LEARNING -->
-        <div class="bento-card bento-card-horizontal reveal">
-          <div class="horizontal-card-left">
-            <div class="bento-card-head">
-              <span class="bento-num">01</span>
-              <span class="bento-badge">Curriculum Architecture</span>
-            </div>
-            <div class="card-title-group">
-              <div class="bento-icon-wrapper">
-                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-              </div>
-              <h3 class="feature-title">Guided Learning</h3>
-            </div>
-            <p class="feature-desc">Structured learning paths that help you progress with clarity and confidence.</p>
-            <div class="bento-card-footer">
-              <span class="bento-tag">Milestone Roadmaps</span>
-              <span class="bento-tag">Guided Drills</span>
-              <span class="bento-tag">Progressive Milestones</span>
-            </div>
-          </div>
-
-          <div class="horizontal-card-right" aria-hidden="true">
-            <div class="milestone-track">
-              <div class="m-step">
-                <span class="m-step-num">Step 01</span>
-                <span class="m-step-title">Foundations</span>
-              </div>
-              <div class="m-arrow">→</div>
-              <div class="m-step">
-                <span class="m-step-num">Step 02</span>
-                <span class="m-step-title">Guided Labs</span>
-              </div>
-              <div class="m-arrow">→</div>
-              <div class="m-step m-step-active">
-                <span class="m-step-num">Step 03</span>
-                <span class="m-step-title">Production Code</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2-COLUMN BALANCED GRID FOR CAPABILITIES 02 - 05 -->
-        <div class="capabilities-grid">
-          <!-- Capability 02: Live Internship Operations -->
-          <div class="bento-card reveal">
-            <div class="bento-card-head">
-              <span class="bento-num">02</span>
-              <span class="bento-badge">Operational Execution</span>
-            </div>
-            <div class="bento-icon-wrapper">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-            </div>
-            <h3>Live Internship Operations</h3>
-            <p>Hands-on training and real-world projects supported by expert guidance.</p>
-            <div class="bento-card-footer">
-              <span class="bento-tag">Real Architecture</span>
-              <span class="bento-tag">Expert Guidance</span>
-            </div>
-          </div>
-
-          <!-- Capability 03: Skill Analytics -->
-          <div class="bento-card reveal">
-            <div class="bento-card-head">
-              <span class="bento-num">03</span>
-              <span class="bento-badge">Progress &amp; Insights</span>
-            </div>
-            <div class="bento-icon-wrapper">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-            </div>
-            <h3>Skill Analytics</h3>
-            <p>Track your progress and identify opportunities to strengthen your skills.</p>
-            <div class="bento-card-footer">
-              <span class="bento-tag">Progress Tracking</span>
-              <span class="bento-tag">Skill Insights</span>
-            </div>
-          </div>
-
-          <!-- Capability 04: Skill Validation -->
-          <div class="bento-card reveal">
-            <div class="bento-card-head">
-              <span class="bento-num">04</span>
-              <span class="bento-badge">Competency Evaluation</span>
-            </div>
-            <div class="bento-icon-wrapper">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-            </div>
-            <h3>Skill Validation</h3>
-            <p>Demonstrate your knowledge through practical assessments and evaluations.</p>
-            <div class="bento-card-footer">
-              <span class="bento-tag">Proof of Work</span>
-              <span class="bento-tag">Practical Audits</span>
-            </div>
-          </div>
-
-          <!-- Capability 05: Attendance Verification -->
-          <div class="bento-card reveal">
-            <div class="bento-card-head">
-              <span class="bento-num">05</span>
-              <span class="bento-badge">Program Integrity</span>
-            </div>
-            <div class="bento-icon-wrapper">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-            </div>
-            <h3>Attendance Verification</h3>
-            <p>Reliable participation tracking for structured learning programs.</p>
-            <div class="bento-card-footer">
-              <span class="bento-tag">Verified Participation</span>
-              <span class="bento-tag">Audit Tracking</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 06: VERIFIED CREDENTIALS -->
-        <div class="bento-card bento-card-horizontal bento-card-credentials reveal">
-          <div class="horizontal-card-left">
-            <div class="bento-card-head">
-              <span class="bento-num">06</span>
-              <span class="bento-badge">Recognized Credentials</span>
-            </div>
-            <div class="card-title-group">
-              <div class="bento-icon-wrapper">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
-              </div>
-              <h3 class="feature-title">Verified Credentials</h3>
-            </div>
-            <p class="feature-desc">Earn certificates that document your learning and completed work.</p>
-            <div class="bento-card-footer">
-              <span class="bento-tag">Permanent Verification URL</span>
-              <span class="bento-tag">Tamper-Proof Verification</span>
-              <span class="bento-tag">Shareable Portfolio Asset</span>
-            </div>
-          </div>
-
-          <div class="horizontal-card-right" aria-hidden="true">
-            <div class="credential-badge-preview">
-              <div class="cred-seal">
-                <span class="cred-check">✓</span>
-              </div>
-              <div class="cred-info">
-                <span class="cred-label">Credential Verification</span>
-                <span class="cred-status">Verified &amp; Permanent</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
     <section class="section internship-section section-grid" id="internships">
       <div class="section-heading reveal">
         <p class="eyebrow">Choose Your Next Move</p>
-        <h2>12 Internship Tracks <span class="at-price">@ ₹1999</span> <strong>₹1499</strong></h2>
+        <h2>12 Summer Internship Tracks <span class="at-price">@ ₹1999</span> <strong>₹1499</strong></h2>
         <p>Hands-on tasks, labs, assessments, and certificates for in-demand technologies.</p>
       </div>
       <div class="track-grid">
-        <a class="track-card reveal" href="/internships/ai-ml"><span class="track-id">01</span><span class="track-tag">AI/ML</span><h3>AI / ML</h3><p>Build intelligent applications using machine learning and modern AI.</p><span class="track-open">Explore Track <b>↗</b></span></a>
-        <a class="track-card reveal" href="/internships/data-science"><span class="track-id">02</span><span class="track-tag">DATA</span><h3>Data Science</h3><p>Transform data into insights, models, and meaningful decisions.</p><span class="track-open">Explore Track <b>↗</b></span></a>
-        <a class="track-card reveal" href="/internships/cloud"><span class="track-id">03</span><span class="track-tag">CLOUD</span><h3>Cloud (Azure / AWS)</h3><p>Learn to build and deploy scalable cloud applications.</p><span class="track-open">Explore Track <b>↗</b></span></a>
-        <a class="track-card reveal" href="/internships/devops"><span class="track-id">04</span><span class="track-tag">DEVOPS</span><h3>DevOps</h3><p>Automate development, deployment, and infrastructure.</p><span class="track-open">Explore Track <b>↗</b></span></a>
-        <a class="track-card reveal" href="/internships/salesforce"><span class="track-id">05</span><span class="track-tag">CRM</span><h3>Salesforce</h3><p>Build business solutions with Salesforce and modern CRM practices.</p><span class="track-open">Explore Track <b>↗</b></span></a>
-        <a class="track-card reveal" href="/internships/python-full-stack"><span class="track-id">06</span><span class="track-tag">PYTHON</span><h3>Python Full Stack</h3><p>Build complete web applications using Python and modern web technologies.</p><span class="track-open">Explore Track <b>↗</b></span></a>
-        <a class="track-card reveal" href="/internships/java-full-stack"><span class="track-id">07</span><span class="track-tag">JAVA</span><h3>Java Full Stack</h3><p>Develop scalable applications using Java across the full stack.</p><span class="track-open">Explore Track <b>↗</b></span></a>
-        <a class="track-card reveal" href="/internships/full-stack-web"><span class="track-id">08</span><span class="track-tag">WEB DEV</span><h3>Full Stack Web</h3><p>Design and build modern web experiences from front end to back end.</p><span class="track-open">Explore Track <b>↗</b></span></a>
-        <a class="track-card reveal" href="/internships/iot"><span class="track-id">09</span><span class="track-tag">IOT</span><h3>IoT</h3><p>Connect devices, data, and intelligent systems.</p><span class="track-open">Explore Track <b>↗</b></span></a>
-        <a class="track-card reveal" href="/internships/embedded-systems"><span class="track-id">10</span><span class="track-tag">SYSTEMS</span><h3>Embedded Systems</h3><p>Build software for connected devices and embedded platforms.</p><span class="track-open">Explore Track <b>↗</b></span></a>
-        <a class="track-card reveal" href="/internships/vlsi"><span class="track-id">11</span><span class="track-tag">HARDWARE</span><h3>VLSI</h3><p>Explore digital design and semiconductor technologies.</p><span class="track-open">Explore Track <b>↗</b></span></a>
-        <a class="track-card reveal" href="/internships/final-year-offline"><span class="track-id">12</span><span class="track-tag">OFFLINE</span><h3>Final Year Offline</h3><p>Build, document, and present your final-year project with expert guidance.</p><span class="track-open">Explore Track <b>↗</b></span></a>
+        <a class="track-card reveal" href="/internships/ai-ml"><span class="track-id">01</span><span class="track-tag">AI/ML</span><h3>AI / ML</h3><p>Build intelligent applications using machine learning and modern AI.</p><span class="track-open">Explore Summer Track <b>↗</b></span></a>
+        <a class="track-card reveal" href="/internships/data-science"><span class="track-id">02</span><span class="track-tag">DATA</span><h3>Data Science</h3><p>Transform data into insights, models, and meaningful decisions.</p><span class="track-open">Explore Summer Track <b>↗</b></span></a>
+        <a class="track-card reveal" href="/internships/cloud"><span class="track-id">03</span><span class="track-tag">CLOUD</span><h3>Cloud (Azure / AWS)</h3><p>Learn to build and deploy scalable cloud applications.</p><span class="track-open">Explore Summer Track <b>↗</b></span></a>
+        <a class="track-card reveal" href="/internships/devops"><span class="track-id">04</span><span class="track-tag">DEVOPS</span><h3>DevOps</h3><p>Automate development, deployment, and infrastructure.</p><span class="track-open">Explore Summer Track <b>↗</b></span></a>
+        <a class="track-card reveal" href="/internships/salesforce"><span class="track-id">05</span><span class="track-tag">CRM</span><h3>Salesforce</h3><p>Build business solutions with Salesforce and modern CRM practices.</p><span class="track-open">Explore Summer Track <b>↗</b></span></a>
+        <a class="track-card reveal" href="/internships/python-full-stack"><span class="track-id">06</span><span class="track-tag">PYTHON</span><h3>Python Full Stack</h3><p>Build complete web applications using Python and modern web technologies.</p><span class="track-open">Explore Summer Track <b>↗</b></span></a>
+        <a class="track-card reveal" href="/internships/java-full-stack"><span class="track-id">07</span><span class="track-tag">JAVA</span><h3>Java Full Stack</h3><p>Develop scalable applications using Java across the full stack.</p><span class="track-open">Explore Summer Track <b>↗</b></span></a>
+        <a class="track-card reveal" href="/internships/full-stack-web"><span class="track-id">08</span><span class="track-tag">WEB DEV</span><h3>Full Stack Web</h3><p>Design and build modern web experiences from front end to back end.</p><span class="track-open">Explore Summer Track <b>↗</b></span></a>
+        <a class="track-card reveal" href="/internships/iot"><span class="track-id">09</span><span class="track-tag">IOT</span><h3>IoT</h3><p>Connect devices, data, and intelligent systems.</p><span class="track-open">Explore Summer Track <b>↗</b></span></a>
+        <a class="track-card reveal" href="/internships/embedded-systems"><span class="track-id">10</span><span class="track-tag">SYSTEMS</span><h3>Embedded Systems</h3><p>Build software for connected devices and embedded platforms.</p><span class="track-open">Explore Summer Track <b>↗</b></span></a>
+        <a class="track-card reveal" href="/internships/vlsi"><span class="track-id">11</span><span class="track-tag">HARDWARE</span><h3>VLSI</h3><p>Explore digital design and semiconductor technologies.</p><span class="track-open">Explore Summer Track <b>↗</b></span></a>
+        <a class="track-card reveal" href="/internships/final-year-offline"><span class="track-id">12</span><span class="track-tag">OFFLINE</span><h3>Final Year Offline</h3><p>Build, document, and present your final-year project with expert guidance.</p><span class="track-open">Explore Summer Track <b>↗</b></span></a>
       </div>
     </section>
 
@@ -732,10 +350,10 @@
       <div class="footer-col">
         <h3>Quick Links</h3>
         <a href="#home">Home</a>
+        <a href="/platform">Platform</a>
         <a href="/courses">Courses</a>
         <a href="/workshops">Workshops</a>
-        <a href="#internships">Internships</a>
-        <a href="#platform">Platform</a>
+        <a href="/internship">Summer Internships</a>
         <a href="#contact">Contact Us</a>
       </div>
       <div class="footer-col footer-contact">
@@ -781,5 +399,97 @@
   </a>
 
   <script type="module" src="./script.js"></script>
+
+  <!-- Reusable Enrollment Popup Modal -->
+  <dialog id="enroll-modal" class="enroll-modal" aria-labelledby="modal-enroll-title" aria-modal="true">
+    <div class="enroll-modal-shell">
+      <button type="button" class="enroll-modal-close" id="enroll-modal-close" aria-label="Close enrollment form">×</button>
+      
+      <div class="enroll-modal-header">
+        <div class="modal-badge"><span class="pulse-dot"></span> Official Enrollment</div>
+        <h3 id="modal-enroll-title" class="enroll-modal-title">Enroll in a Program</h3>
+        <p class="enroll-modal-subtitle">Take the next step in your tech journey. Fill in your details below for instant admissions onboarding.</p>
+      </div>
+
+      <div id="modal-form-alert" class="modal-alert" role="alert" style="display: none;"></div>
+
+      <form id="modal-enroll-form" class="modal-enroll-form" novalidate>
+        <div class="form-group">
+          <label for="modal-fullName">Full Name <span class="req">*</span></label>
+          <input type="text" id="modal-fullName" name="fullName" placeholder="e.g. Aanya Sharma" autocomplete="name" required>
+          <span class="field-error" id="err-fullName"></span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="modal-email">Email Address <span class="req">*</span></label>
+            <input type="email" id="modal-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            <span class="field-error" id="err-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="modal-phone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="modal-phone" name="phone" placeholder="e.g. 9876543210" autocomplete="tel" required>
+            <span class="field-error" id="err-phone"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="modal-program">Select a Program <span class="req">*</span></label>
+          <select id="modal-program" name="program" required>
+            <option value="" disabled selected>-- Select Course, Workshop or Summer Internship --</option>
+            <optgroup label="Courses (33% OFF - ₹9,999)">
+              <option value="C Programming">C Programming</option>
+              <option value="Python Full Stack Development">Python Full Stack Development</option>
+              <option value="Java Full Stack Development">Java Full Stack Development</option>
+            </optgroup>
+            <optgroup label="Summer Internships (₹1499)">
+              <option value="Summer Internship - AI / ML">Summer Internship - AI / ML</option>
+              <option value="Summer Internship - Data Science">Summer Internship - Data Science</option>
+              <option value="Summer Internship - Cloud (Azure / AWS)">Summer Internship - Cloud (Azure / AWS)</option>
+              <option value="Summer Internship - DevOps">Summer Internship - DevOps</option>
+              <option value="Summer Internship - Salesforce">Summer Internship - Salesforce</option>
+              <option value="Summer Internship - Python Full Stack">Summer Internship - Python Full Stack</option>
+              <option value="Summer Internship - Java Full Stack">Summer Internship - Java Full Stack</option>
+              <option value="Summer Internship - Full-Stack Web">Summer Internship - Full-Stack Web</option>
+              <option value="Summer Internship - Mobile App Development">Summer Internship - Mobile App Development</option>
+              <option value="Summer Internship - Cybersecurity">Summer Internship - Cybersecurity</option>
+              <option value="Summer Internship - Blockchain">Summer Internship - Blockchain</option>
+              <option value="Summer Internship - Internet of Things (IoT)">Summer Internship - Internet of Things (IoT)</option>
+            </optgroup>
+            <optgroup label="Live Workshops (₹0 / Free)">
+              <option value="Workshop - Core Programming & Algorithms">Workshop - Core Programming & Algorithms</option>
+              <option value="Workshop - Modern Web Development">Workshop - Modern Web Development</option>
+              <option value="Workshop - Introductory AI & Machine Learning">Workshop - Introductory AI & Machine Learning</option>
+            </optgroup>
+          </select>
+          <span class="field-error" id="err-program"></span>
+        </div>
+
+        <button type="submit" id="modal-submit-btn" class="button button-primary modal-submit-btn">
+          <span class="btn-text">Submit Enrollment</span>
+          <span class="btn-spinner" style="display: none;" aria-hidden="true">⏳</span>
+        </button>
+
+        <p class="modal-form-foot">🔒 Your information is secure and used strictly for academic enrollment.</p>
+      </form>
+
+      <div id="modal-success-view" class="modal-success-view" style="display: none;">
+        <div class="success-icon">✓</div>
+        <h3 class="success-title">Enrollment Submitted!</h3>
+        <p id="success-message" class="success-message">Thank you! Your enrollment has been successfully registered in our academic admissions database.</p>
+        
+        <div class="success-details-card" id="success-details-card"></div>
+
+        <div class="success-actions">
+          <a id="modal-wa-btn" class="button button-primary modal-wa-link" href="#" target="_blank" rel="noopener noreferrer">
+            Connect via WhatsApp for Instant Onboarding <span>↗</span>
+          </a>
+          <button type="button" class="button button-outline modal-close-btn" id="modal-done-btn">Done</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="module" src="./enroll-modal.js"></script>
 </body>
 </html>

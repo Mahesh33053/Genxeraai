@@ -14,6 +14,10 @@
       "destination": "/workshops.html"
     },
     {
+      "source": "/platform",
+      "destination": "/platform.html"
+    },
+    {
       "source": "/internships/:slug",
       "destination": "/internship?track=:slug"
     },

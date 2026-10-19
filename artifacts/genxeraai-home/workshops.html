@@ -325,5 +325,97 @@
   </a>
 
   <script type="module" src="./workshops.js"></script>
+
+  <!-- Reusable Enrollment Popup Modal -->
+  <dialog id="enroll-modal" class="enroll-modal" aria-labelledby="modal-enroll-title" aria-modal="true">
+    <div class="enroll-modal-shell">
+      <button type="button" class="enroll-modal-close" id="enroll-modal-close" aria-label="Close enrollment form">×</button>
+      
+      <div class="enroll-modal-header">
+        <div class="modal-badge"><span class="pulse-dot"></span> Official Enrollment</div>
+        <h3 id="modal-enroll-title" class="enroll-modal-title">Enroll in a Program</h3>
+        <p class="enroll-modal-subtitle">Take the next step in your tech journey. Fill in your details below for instant admissions onboarding.</p>
+      </div>
+
+      <div id="modal-form-alert" class="modal-alert" role="alert" style="display: none;"></div>
+
+      <form id="modal-enroll-form" class="modal-enroll-form" novalidate>
+        <div class="form-group">
+          <label for="modal-fullName">Full Name <span class="req">*</span></label>
+          <input type="text" id="modal-fullName" name="fullName" placeholder="e.g. Aanya Sharma" autocomplete="name" required>
+          <span class="field-error" id="err-fullName"></span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="modal-email">Email Address <span class="req">*</span></label>
+            <input type="email" id="modal-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            <span class="field-error" id="err-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="modal-phone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="modal-phone" name="phone" placeholder="e.g. 9876543210" autocomplete="tel" required>
+            <span class="field-error" id="err-phone"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="modal-program">Select a Program <span class="req">*</span></label>
+          <select id="modal-program" name="program" required>
+            <option value="" disabled selected>-- Select Course, Workshop or Summer Internship --</option>
+            <optgroup label="Courses (33% OFF - ₹9,999)">
+              <option value="C Programming">C Programming</option>
+              <option value="Python Full Stack Development">Python Full Stack Development</option>
+              <option value="Java Full Stack Development">Java Full Stack Development</option>
+            </optgroup>
+            <optgroup label="Summer Internships (₹1499)">
+              <option value="Summer Internship - AI / ML">Summer Internship - AI / ML</option>
+              <option value="Summer Internship - Data Science">Summer Internship - Data Science</option>
+              <option value="Summer Internship - Cloud (Azure / AWS)">Summer Internship - Cloud (Azure / AWS)</option>
+              <option value="Summer Internship - DevOps">Summer Internship - DevOps</option>
+              <option value="Summer Internship - Salesforce">Summer Internship - Salesforce</option>
+              <option value="Summer Internship - Python Full Stack">Summer Internship - Python Full Stack</option>
+              <option value="Summer Internship - Java Full Stack">Summer Internship - Java Full Stack</option>
+              <option value="Summer Internship - Full-Stack Web">Summer Internship - Full-Stack Web</option>
+              <option value="Summer Internship - Mobile App Development">Summer Internship - Mobile App Development</option>
+              <option value="Summer Internship - Cybersecurity">Summer Internship - Cybersecurity</option>
+              <option value="Summer Internship - Blockchain">Summer Internship - Blockchain</option>
+              <option value="Summer Internship - Internet of Things (IoT)">Summer Internship - Internet of Things (IoT)</option>
+            </optgroup>
+            <optgroup label="Live Workshops (₹0 / Free)">
+              <option value="Workshop - Core Programming & Algorithms">Workshop - Core Programming & Algorithms</option>
+              <option value="Workshop - Modern Web Development">Workshop - Modern Web Development</option>
+              <option value="Workshop - Introductory AI & Machine Learning">Workshop - Introductory AI & Machine Learning</option>
+            </optgroup>
+          </select>
+          <span class="field-error" id="err-program"></span>
+        </div>
+
+        <button type="submit" id="modal-submit-btn" class="button button-primary modal-submit-btn">
+          <span class="btn-text">Submit Enrollment</span>
+          <span class="btn-spinner" style="display: none;" aria-hidden="true">⏳</span>
+        </button>
+
+        <p class="modal-form-foot">🔒 Your information is secure and used strictly for academic enrollment.</p>
+      </form>
+
+      <div id="modal-success-view" class="modal-success-view" style="display: none;">
+        <div class="success-icon">✓</div>
+        <h3 class="success-title">Enrollment Submitted!</h3>
+        <p id="success-message" class="success-message">Thank you! Your enrollment has been successfully registered in our academic admissions database.</p>
+        
+        <div class="success-details-card" id="success-details-card"></div>
+
+        <div class="success-actions">
+          <a id="modal-wa-btn" class="button button-primary modal-wa-link" href="#" target="_blank" rel="noopener noreferrer">
+            Connect via WhatsApp for Instant Onboarding <span>↗</span>
+          </a>
+          <button type="button" class="button button-outline modal-close-btn" id="modal-done-btn">Done</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="module" src="./enroll-modal.js"></script>
 </body>
 </html>

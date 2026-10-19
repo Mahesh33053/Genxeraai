@@ -3768,6 +3768,347 @@ body[data-theme="dark"] .info-kicker {
   }
 }
 
+/* ==========================================================================
+   REUSABLE ENROLLMENT POPUP (MODAL) STYLES
+   ========================================================================== */
+
+dialog.enroll-modal {
+  border: none;
+  background: transparent;
+  padding: 0;
+  max-width: 560px;
+  width: min(94vw, 560px);
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.4);
+  overflow: visible;
+}
+
+dialog.enroll-modal::backdrop {
+  background: rgba(10, 15, 29, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: modalFadeIn .2s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.enroll-modal-shell {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 32px 28px;
+  color: var(--text-primary);
+  box-shadow: var(--glass-shadow-hover);
+  animation: modalSlideUp .25s cubic-bezier(0.16, 1, 0.3, 1);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+body[data-theme="dark"] .enroll-modal-shell {
+  background: #0f172a;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.enroll-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-subtle);
+  background: var(--soft);
+  color: var(--text-secondary);
+  font-size: 22px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .2s ease;
+  z-index: 10;
+}
+
+.enroll-modal-close:hover {
+  background: var(--danger-soft, #fee2e2);
+  color: var(--danger, #ef4444);
+  border-color: rgba(239, 68, 68, 0.3);
+  transform: scale(1.05);
+}
+
+.enroll-modal-header {
+  margin-bottom: 22px;
+  padding-right: 36px;
+}
+
+.modal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--brand-accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.modal-badge .pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+}
+
+.enroll-modal-title {
+  margin: 0 0 6px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -.02em;
+}
+
+.enroll-modal-subtitle {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.modal-alert {
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.45;
+  margin-bottom: 18px;
+}
+
+.modal-alert.error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+}
+
+.modal-enroll-form .form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-enroll-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 580px) {
+  .modal-enroll-form .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.modal-enroll-form label {
+  font-size: 12.5px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.modal-enroll-form label .req {
+  color: #ef4444;
+}
+
+.modal-enroll-form input,
+.modal-enroll-form select {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  background: var(--surface);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 14px;
+  transition: all .2s ease;
+  box-sizing: border-box;
+}
+
+body[data-theme="dark"] .modal-enroll-form input,
+body[data-theme="dark"] .modal-enroll-form select {
+  background: #1e293b;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.modal-enroll-form input:focus,
+.modal-enroll-form select:focus {
+  outline: none;
+  border-color: var(--brand-accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.modal-enroll-form input.has-error,
+.modal-enroll-form select.has-error {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.03);
+}
+
+.field-error {
+  font-size: 11.5px;
+  color: #ef4444;
+  margin-top: 4px;
+  min-height: 15px;
+}
+
+.modal-submit-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 13px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 12px;
+  margin-top: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-submit-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.modal-form-foot {
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--text-muted);
+  margin: 12px 0 0;
+}
+
+/* Success View */
+.modal-success-view {
+  text-align: center;
+  padding: 10px 4px 6px;
+}
+
+.success-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  font-size: 26px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 0 0 6px rgba(16, 185, 129, 0.08);
+}
+
+.success-title {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.success-message {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin: 0 0 18px;
+}
+
+.success-details-card {
+  text-align: left;
+  background: var(--soft);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 22px;
+  font-size: 13px;
+}
+
+body[data-theme="dark"] .success-details-card {
+  background: #1e293b;
+}
+
+.sd-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px dashed var(--border-subtle);
+}
+
+.sd-row:last-child {
+  border-bottom: none;
+}
+
+.sd-label {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.sd-val {
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: right;
+}
+
+.sd-val.text-success {
+  color: #10b981;
+}
+
+.success-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-wa-link {
+  width: 100%;
+  justify-content: center;
+  background: #10b981 !important;
+  border-color: #10b981 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+.modal-wa-link:hover {
+  background: #059669 !important;
+  border-color: #059669 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+
+.modal-close-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+
 
 
 

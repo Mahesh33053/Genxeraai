@@ -6,6 +6,18 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/courses",
+      "destination": "/courses.html"
+    },
+    {
+      "source": "/workshops",
+      "destination": "/workshops.html"
+    },
+    {
+      "source": "/platform",
+      "destination": "/platform.html"
+    },
+    {
       "source": "/internships/:slug",
       "destination": "/internship?track=:slug"
     },

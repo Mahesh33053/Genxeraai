@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <title>Internship Programs — GenXEraAI</title>
+  <title>Summer Internships 2026 | GenXEraAI - Industry-Ready Tech Tracks</title>
   <meta name="description" content="Hands-on internship programs by GenXEraAI. Master industry-standard technologies through real-world projects, live operations, and expert mentorship.">
   <meta name="keywords" content="GenXEraAI, tech internships, AI/ML, Data Science, Cloud, DevOps, Salesforce, Python Full Stack, Java Full Stack, Web Development, IoT, VLSI, Embedded Systems">
   <link rel="canonical" href="https://www.genxeraai.com/internships/">
@@ -74,16 +74,17 @@
       </button>
       <nav class="main-nav" id="main-nav" aria-label="Main navigation">
         <a href="/" class="nav-link">Home</a>
+        <a href="/platform" class="nav-link">Platform</a>
         <a href="/courses" class="nav-link">Courses</a>
         <a href="/workshops" class="nav-link">Workshops</a>
-        <a href="/#internships" class="nav-link active">Internships</a>
+        <a href="/internship" class="nav-link active">Summer Internships</a>
         <a href="#overview" class="nav-link">Overview</a>
         <a href="#curriculum" class="nav-link">Curriculum</a>
         <a href="#projects" class="nav-link">Projects</a>
         <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
           <span class="theme-symbol" aria-hidden="true">☼</span>
         </button>
-        <a class="nav-contact button-header-enroll" id="header-enroll-btn" href="#enroll">Enroll Now</a>
+        <button class="btn btn-sm btn-primary nav-cta" type="button" data-open-modal="enroll">Enroll Now</button>
       </nav>
     </div>
   </header>
@@ -145,7 +146,7 @@
         <div class="cta-banner reveal is-visible">
           <div class="cta-copy">
             <p class="eyebrow">Ready to Launch</p>
-            <h2>Start your <em>Internship</em></h2>
+            <h2>Start your <em>Summer Internship</em></h2>
             <p>Enroll today to secure your seat. Experience structured learning, hands-on tasks, real projects, and earn verified credentials.</p>
             <div class="cta-perks">
               <div class="perk-item"><span>✓</span> Starting @ ₹1499</div>
@@ -270,5 +271,97 @@
   </a>
 
   <script type="module" src="./internship.js"></script>
+
+  <!-- Reusable Enrollment Popup Modal -->
+  <dialog id="enroll-modal" class="enroll-modal" aria-labelledby="modal-enroll-title" aria-modal="true">
+    <div class="enroll-modal-shell">
+      <button type="button" class="enroll-modal-close" id="enroll-modal-close" aria-label="Close enrollment form">×</button>
+      
+      <div class="enroll-modal-header">
+        <div class="modal-badge"><span class="pulse-dot"></span> Official Enrollment</div>
+        <h3 id="modal-enroll-title" class="enroll-modal-title">Enroll in a Program</h3>
+        <p class="enroll-modal-subtitle">Take the next step in your tech journey. Fill in your details below for instant admissions onboarding.</p>
+      </div>
+
+      <div id="modal-form-alert" class="modal-alert" role="alert" style="display: none;"></div>
+
+      <form id="modal-enroll-form" class="modal-enroll-form" novalidate>
+        <div class="form-group">
+          <label for="modal-fullName">Full Name <span class="req">*</span></label>
+          <input type="text" id="modal-fullName" name="fullName" placeholder="e.g. Aanya Sharma" autocomplete="name" required>
+          <span class="field-error" id="err-fullName"></span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="modal-email">Email Address <span class="req">*</span></label>
+            <input type="email" id="modal-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            <span class="field-error" id="err-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="modal-phone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="modal-phone" name="phone" placeholder="e.g. 9876543210" autocomplete="tel" required>
+            <span class="field-error" id="err-phone"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="modal-program">Select a Program <span class="req">*</span></label>
+          <select id="modal-program" name="program" required>
+            <option value="" disabled selected>-- Select Course, Workshop or Summer Internship --</option>
+            <optgroup label="Courses (33% OFF - ₹9,999)">
+              <option value="C Programming">C Programming</option>
+              <option value="Python Full Stack Development">Python Full Stack Development</option>
+              <option value="Java Full Stack Development">Java Full Stack Development</option>
+            </optgroup>
+            <optgroup label="Summer Internships (₹1499)">
+              <option value="Summer Internship - AI / ML">Summer Internship - AI / ML</option>
+              <option value="Summer Internship - Data Science">Summer Internship - Data Science</option>
+              <option value="Summer Internship - Cloud (Azure / AWS)">Summer Internship - Cloud (Azure / AWS)</option>
+              <option value="Summer Internship - DevOps">Summer Internship - DevOps</option>
+              <option value="Summer Internship - Salesforce">Summer Internship - Salesforce</option>
+              <option value="Summer Internship - Python Full Stack">Summer Internship - Python Full Stack</option>
+              <option value="Summer Internship - Java Full Stack">Summer Internship - Java Full Stack</option>
+              <option value="Summer Internship - Full-Stack Web">Summer Internship - Full-Stack Web</option>
+              <option value="Summer Internship - Mobile App Development">Summer Internship - Mobile App Development</option>
+              <option value="Summer Internship - Cybersecurity">Summer Internship - Cybersecurity</option>
+              <option value="Summer Internship - Blockchain">Summer Internship - Blockchain</option>
+              <option value="Summer Internship - Internet of Things (IoT)">Summer Internship - Internet of Things (IoT)</option>
+            </optgroup>
+            <optgroup label="Live Workshops (₹0 / Free)">
+              <option value="Workshop - Core Programming & Algorithms">Workshop - Core Programming & Algorithms</option>
+              <option value="Workshop - Modern Web Development">Workshop - Modern Web Development</option>
+              <option value="Workshop - Introductory AI & Machine Learning">Workshop - Introductory AI & Machine Learning</option>
+            </optgroup>
+          </select>
+          <span class="field-error" id="err-program"></span>
+        </div>
+
+        <button type="submit" id="modal-submit-btn" class="button button-primary modal-submit-btn">
+          <span class="btn-text">Submit Enrollment</span>
+          <span class="btn-spinner" style="display: none;" aria-hidden="true">⏳</span>
+        </button>
+
+        <p class="modal-form-foot">🔒 Your information is secure and used strictly for academic enrollment.</p>
+      </form>
+
+      <div id="modal-success-view" class="modal-success-view" style="display: none;">
+        <div class="success-icon">✓</div>
+        <h3 class="success-title">Enrollment Submitted!</h3>
+        <p id="success-message" class="success-message">Thank you! Your enrollment has been successfully registered in our academic admissions database.</p>
+        
+        <div class="success-details-card" id="success-details-card"></div>
+
+        <div class="success-actions">
+          <a id="modal-wa-btn" class="button button-primary modal-wa-link" href="#" target="_blank" rel="noopener noreferrer">
+            Connect via WhatsApp for Instant Onboarding <span>↗</span>
+          </a>
+          <button type="button" class="button button-outline modal-close-btn" id="modal-done-btn">Done</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="module" src="./enroll-modal.js"></script>
 </body>
 </html>

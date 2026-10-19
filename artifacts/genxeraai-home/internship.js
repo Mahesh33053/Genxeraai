@@ -958,13 +958,13 @@
         <nav class="track-breadcrumbs" aria-label="Breadcrumb">
           <ol>
             <li><a href="/#home">Home</a></li>
-            <li><span class="crumb-sep">/</span><a href="/#internships">Internships</a></li>
+            <li><span class="crumb-sep">/</span><a href="/#internships">Summer Internships</a></li>
             <li><span class="crumb-sep">/</span><span class="crumb-current" aria-current="page">${track.title}</span></li>
           </ol>
         </nav>
         <div class="track-hero-badge">
           <span class="badge-dot"></span>
-          <span>GENXERAAI INTERNSHIP // TRACK_${track.number}</span>
+          <span>GENXERAAI SUMMER INTERNSHIP // TRACK_${track.number}</span>
           <span class="badge-tag">${track.tag}</span>
         </div>
         <h1 class="track-hero-title">${track.title}</h1>
@@ -997,8 +997,8 @@
         </div>
 
         <div class="track-hero-actions">
-          <a class="button button-primary track-hero-enroll" href="#enroll">Enroll Now <span>→</span></a>
-          <a class="button button-outline" href="/#internships">← View All Internships</a>
+          <button class="button button-primary track-hero-enroll" type="button" data-open-modal="enroll" data-track="${track.id}">Enroll Now <span>→</span></button>
+          <a class="button button-outline" href="/#internships">← View All Summer Internships</a>
         </div>
       </div>
     `;

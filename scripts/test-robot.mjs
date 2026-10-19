@@ -19,11 +19,14 @@ const requiredFiles = [
   'internship.html',
   'courses.html',
   'workshops.html',
+  'platform.html',
   'style.css',
   'script.js',
   'internship.js',
   'courses.js',
   'workshops.js',
+  'platform.js',
+  'enroll-modal.js',
   'assets/logos/logo.png',
   'public/robots.txt',
   'public/favicon.svg',
@@ -123,6 +126,7 @@ scanHtml('index.html');
 scanHtml('internship.html');
 scanHtml('courses.html');
 scanHtml('workshops.html');
+scanHtml('platform.html');
 
 // 5. Internship Track Verification
 console.log('\nValidating all 12 internship tracks...');
