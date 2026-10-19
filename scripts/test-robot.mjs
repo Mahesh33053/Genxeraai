@@ -17,9 +17,13 @@ const warnings = [];
 const requiredFiles = [
   'index.html',
   'internship.html',
+  'courses.html',
+  'workshops.html',
   'style.css',
   'script.js',
   'internship.js',
+  'courses.js',
+  'workshops.js',
   'assets/logos/logo.png',
   'public/robots.txt',
   'public/favicon.svg',
@@ -117,6 +121,8 @@ function scanHtml(filename) {
 
 scanHtml('index.html');
 scanHtml('internship.html');
+scanHtml('courses.html');
+scanHtml('workshops.html');
 
 // 5. Internship Track Verification
 console.log('\nValidating all 12 internship tracks...');

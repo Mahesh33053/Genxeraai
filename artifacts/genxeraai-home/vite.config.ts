@@ -18,6 +18,14 @@ export default defineConfig({
       name: 'internships-rewrite',
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
+          if (req.url === '/courses' || req.url === '/courses/') {
+            req.url = '/courses.html';
+            return next();
+          }
+          if (req.url === '/workshops' || req.url === '/workshops/') {
+            req.url = '/workshops.html';
+            return next();
+          }
           const match = req.url && req.url.match(/^\/internships\/([a-zA-Z0-9_-]+)\/?(?:\?(.*))?$/);
           if (match) {
             const slug = match[1];
@@ -29,6 +37,14 @@ export default defineConfig({
       },
       configurePreviewServer(server) {
         server.middlewares.use((req, res, next) => {
+          if (req.url === '/courses' || req.url === '/courses/') {
+            req.url = '/courses.html';
+            return next();
+          }
+          if (req.url === '/workshops' || req.url === '/workshops/') {
+            req.url = '/workshops.html';
+            return next();
+          }
           const match = req.url && req.url.match(/^\/internships\/([a-zA-Z0-9_-]+)\/?(?:\?(.*))?$/);
           if (match) {
             const slug = match[1];
@@ -73,6 +89,8 @@ export default defineConfig({
       input: {
         main: path.resolve(import.meta.dirname, 'index.html'),
         internship: path.resolve(import.meta.dirname, 'internship.html'),
+        courses: path.resolve(import.meta.dirname, 'courses.html'),
+        workshops: path.resolve(import.meta.dirname, 'workshops.html'),
       },
     },
   },
